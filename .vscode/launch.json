@@ -1,64 +1,77 @@
 {
-    // Use IntelliSense to learn about possible attributes.
-    // Hover to view descriptions of existing attributes.
-    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
-    "version": "0.2.0",
-    "configurations": [
-        {
-            "name": "Java",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ]
-        },
-        {
-            "name": "Java",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "preLaunchTask": "build",                     // Runs the task created above before running this configuration
-            "jdkPath": "${env:JAVA_HOME}/bin",            // You need to set JAVA_HOME enviroment variable
-            "cwd": "${workspaceRoot}",
-            "startupClass": "my.package.MyMainClass",     // The class you want to run
-            "startupClassPathPattern": "src/main/java/",  // A pattern that matches the begining of your src path any paths after
-                                                          // the pattern will be used to construct the classpath for your startupClass
-            "sourcePath": ["${workspaceRoot}/src"],       // Indicates where your source (.java) files are
-            "classpath": ["${workspaceRoot}/bin"],        // Indicates the location of your .class files
-            "options": [],                                 // Additional options to pass to the java executable
-            "args": []                                    // Command line arguments to pass to the startup class
-        },
-        {
-            "name": "Java Console App",
-            "type": "java",
-            "request": "launch",
-            "stopOnEntry": true,
-            "jdkPath": "${env:JAVA_HOME}/bin",
-            "cwd": "${fileDirname}",
-            "startupClass": "${fileBasenameNoExtension}",
-            "classpath": [
-                ".",
-                "${fileDirname}"
-            ],
-            "externalConsole": true
-        },
-        {
-            "type": "java",
-            "name": "Launch Current File",
-            "request": "launch",
-            "mainClass": "${file}"
-        },
-        {
-            "type": "java",
-            "name": "Launch Test",
-            "request": "launch",
-            "mainClass": "Test",
-            "projectName": "STRIVER SHEET_9bb2b230"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Python: Current File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "console": "integratedTerminal",
+      "justMyCode": true
+    },
+    {
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"]
+    },
+    {
+      "name": "Java",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "preLaunchTask": "build",
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${workspaceRoot}",
+      "startupClass": "my.package.MyMainClass",
+      "startupClassPathPattern": "src/main/java/",
+      "sourcePath": ["${workspaceRoot}/src"],
+      "classpath": ["${workspaceRoot}/bin"],
+      "options": [],
+      "args": []
+    },
+    {
+      "name": "Java Console App",
+      "type": "java",
+      "request": "launch",
+      "stopOnEntry": true,
+      "jdkPath": "${env:JAVA_HOME}/bin",
+      "cwd": "${fileDirname}",
+      "startupClass": "${fileBasenameNoExtension}",
+      "classpath": [".", "${fileDirname}"],
+      "externalConsole": true
+    },
+    {
+      "type": "java",
+      "name": "Launch Current File",
+      "request": "launch",
+      "mainClass": "${file}"
+    },
+    {
+      "type": "java",
+      "name": "Launch Test",
+      "request": "launch",
+      "mainClass": "Test",
+      "projectName": "STRIVER SHEET_9bb2b230"
+    },
+    {
+      "name": "Dynamic Python: File",
+      "type": "python",
+      "request": "launch",
+      "program": "${file}",
+      "justMyCode": true
+    }
+  ]
 }
