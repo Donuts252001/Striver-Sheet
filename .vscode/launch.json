@@ -2,6 +2,27 @@
   "version": "0.2.0",
   "configurations": [
     {
+      "type": "java",
+      "name": "Launch Main",
+      "request": "launch",
+      "mainClass": "Main",
+      "projectName": "STRIVER SHEET_9bb2b230"
+    },
+    {
+      "type": "java",
+      "name": "Launch Q13",
+      "request": "launch",
+      "mainClass": "Q13",
+      "projectName": "STRIVER SHEET_9bb2b230"
+    },
+    {
+      "type": "java",
+      "name": "Launch TUF",
+      "request": "launch",
+      "mainClass": "TUF",
+      "projectName": "STRIVER SHEET_9bb2b230"
+    },
+    {
       "name": "Python: Current File",
       "type": "python",
       "request": "launch",
@@ -25,7 +46,10 @@
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
       "startupClass": "${fileBasenameNoExtension}",
-      "classpath": [".", "${fileDirname}"]
+      "classpath": [
+        ".",
+        "${fileDirname}"
+      ]
     },
     {
       "name": "Java",
@@ -37,8 +61,12 @@
       "cwd": "${workspaceRoot}",
       "startupClass": "my.package.MyMainClass",
       "startupClassPathPattern": "src/main/java/",
-      "sourcePath": ["${workspaceRoot}/src"],
-      "classpath": ["${workspaceRoot}/bin"],
+      "sourcePath": [
+        "${workspaceRoot}/src"
+      ],
+      "classpath": [
+        "${workspaceRoot}/bin"
+      ],
       "options": [],
       "args": []
     },
@@ -50,7 +78,10 @@
       "jdkPath": "${env:JAVA_HOME}/bin",
       "cwd": "${fileDirname}",
       "startupClass": "${fileBasenameNoExtension}",
-      "classpath": [".", "${fileDirname}"],
+      "classpath": [
+        ".",
+        "${fileDirname}"
+      ],
       "externalConsole": true
     },
     {
